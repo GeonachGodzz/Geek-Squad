@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <title>Game Performance based on GPU Temperature</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+    <nav>
+        <h1>Navigation</h1>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="cpu-vs-gpu.html">CPU Without GPU</a></li>
+            <li><a href="brand.html">Does Brand Matter?</a></li>
+            <li><a href="temperature.html">Temperature Effects</a></li>
+            <li><a href="os-comparison.html">Linux vs Windows</a></li>
+            <li><a href="summary.html">Summary & Sources</a></li>
+        </ul>
+        <div class="nav-banners">
+            <img src="image/banner2.png" alt="Banner">
+            <img src="image/geekSquad.png" alt="Banner">
+        </div>
+    </nav>
+        <header>
+            <h1>How does GPU temperature affect Game Performance?</h1><hr>
+        </header>
+        <h2>Hot VS Cold</h2>
+        <p>In our experiment, we tested how different GPU temperatures affect the frame rate of a game by using different GPU fan speeds.<br> 
+            The goal was to understand whether cooling plays a role in maintaining stable performance during gameplay.</p>
+        <h2>Observation</h2>
+        <p> We ran the game at two different GPU fan speeds; one at the <strong>minimum fan speed</strong> and the other at the <strong>maximum fan speed</strong> 
+            resulting in two different temperatures which enabled us to carry out this experiment. The results showed a <strong>clear difference in performance</strong>.</p>
+        
+
+        <h2>Performance test on Fortnite</h2>
+
+                                            <!-- LOW TEMPERATURE FORNITE -->
+        <details class="dropdown">
+            <summary>Low Temperature</summary>
+            <ul>
+                At <strong>lower temperatures</strong>, the frame rate was <strong>higher</strong> and remained <strong>consistent</strong> throughout the session.There were <strong>
+                    no major dips</strong> or stutters, and the gameplay felt smooth<br>
+            </ul><br>
+                <iframe width="600" height="430" src="https://www.youtube.com/embed/kNq8c0gsjsY" title="fortnitelowtempt" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </details>
+
+                                            <!-- HIGH TEMPERATURE FORNITE -->
+        <details class="dropdown">
+            <summary>High Temperature</summary>
+            <ul>
+                At <strong>higher temperatures</strong>, the frame rate was <strong>lower</strong> and <strong>unstable</strong>. There were <strong>dips</strong> in performance, 
+                which affected the overall gaming experience
+            </ul><br>
+                <iframe width="600" height="430" src="https://www.youtube.com/embed/CezWnnbgzIA" title="fortnitehightempt" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </video>
+        </details>
+        
+        <h2>Performance test on Valorant</h2>
+
+                                            <!-- MAXIMUM FAN SPEED VALORANT -->
+        <details class="dropdown">
+            <summary>Maximum Fan Speed</summary>
+            <h2>Performance test on Valorant</h2>
+            <ul>
+                At the <strong>maximum fan speed</strong>, the frame rate was <strong>higher</strong> and remained <strong>consistent</strong> throughout the session.<br>
+                    There were <strong>no major dips</strong> or stutters, and the gameplay felt smooth.
+            </ul>
+            <img src="image/valfanmaxspeed.png" width="600" height="450" alt="Maximum fan speed temperature">
+            <img src="image/valmaxspeedfps.png" width="600" height="450" alt="Frame Rate at Maximum fan speed">
+        </details>
+
+                                            <!-- MINIMUM FAN SPEED VALORANT -->
+        <details class="dropdown">
+            <summary>Minimum Fan Speed</summary>
+            <ul>
+                At the <strong>minimum fan speed</strong>, the frame rate was <strong>lower</strong>. Compared to the Fortnite, the frame rate was decently <strong>stable</strong>, 
+                    but it was still <strong>lower</strong> compared to when the fan speed was set to <strong>maximum</strong>.
+            </ul>
+            <img src="image/valfanminspeed.png" width="600" height="450" alt="Minimum fan speed temperature">
+            <img src="image/valminspeedfps.png" wdith="600" height="450" alt="Frame Rate at Minimum fan speed">
+        </details>
+        <br>
+        <hr>
+        <h1 style ="text-align: center;">Observations between Fortnite Test & Valorant Test</h1>
+        <br>
+            <ul>
+                When testing the two scenarios, what we manipulated in the experiment was the <strong>GPU fan speed</strong>; 
+                increasing airflow should lower down the overall temperature of the GPU;<br>However, when tested in Valorant, the <strong>end temperature of the GPU</strong> 
+                came up to around the <strong>SAME TEMPERATURE</strong> while running the game, but the <strong>starting temperature of the GPU</strong>
+                when fan speed was at a 100% was much <strong>lower</strong> compared to <strong>minimum fan speed</strong>
+            </ul>
+            <img src="image/valmaxspeedgraph.png" width="600" height="450" alt="Graph of Temperature at Maximum Fan Speed">
+            <img src="image/valminspeedgraph.png" width="600" height="450" alt="Graph of Temperature at Minimum Fan Speed">
+            <ul class="offset">
+                <li>Even thought the temperature was the same, the overall performance of the game was significantly different.</li>
+                <li>Game had more frames per second with <strong>maximum fan speed</strong> even though thee temperature was the same</li>
+            </ul>
+        
+        <div id="Key Points">
+            <h2>Key Points</h2>
+            <ol class="offset">
+                <li><strong>Lower GPU temperature</strong> result in <strong>better and more consistent frame rates</strong>.</li>
+                <li><strong>Higher GPU temperatures</strong> cause <strong>Perfromance drops</strong> and <strong>unstable frame rates</strong>.</li>
+                <li>Keeping the GPU cool is important for <strong>smooth and optimal gameplay</strong></li>
+            </ol>
+        </div>
+
+        <div class="footer-content">
+        <footer>
+            <p>Geek Squad : 2025 | Case Study Project</p>
+            <p>Created by: <strong>Joshua, Loi & Christan</strong></p>
+        </footer>
+        </div>
+
+    </div>
+    </body>
+
+</html>
